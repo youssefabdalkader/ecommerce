@@ -1,0 +1,37 @@
+header --- nav --- footer --- footerscripts 
+connect with database 
+register => fristname - lastname - phone - email - password - confirmpassword - gender
+
+validation => [
+    fristname --> required - string
+    lastname  --> required - string 
+    lastname  --> required - m or f  
+    phone     --> required - regex - unique  
+    email     --> required - regex - unique  
+    password  --> required - regex - confirm  
+]
+
+register validation 
+insert register in database ;
+
+login => username , password 
+
+
+validation => [
+    username --> required - regex - found in data base ---> status 1
+    password --> required - regex - found in data base ---> status 1
+]
+
+middle ware ==> geust - auth 
+
+remember me 
+
+profile update 
+image => name - extionsion - where
+update password
+
+==============================================================
+get category and subcategory
+1- make model to category and subcategory
+2- get them from database 
+3- loop that in nav var
